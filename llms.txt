@@ -1,0 +1,41 @@
+# Pratyansh Singh
+
+> Pratyansh Singh is an Associate Software Developer and Tester at AAROHII AI SOLUTION PRIVATE LIMITED in Kanpur, Uttar Pradesh, India. He lives in Kanpur Dehat and studied at GLA University. This site is his public footprint: products, personal code, and social profiles.
+
+Canonical page: https://pratyansh-droid.github.io/portfolio-website/
+
+## Role
+
+- Title: Associate Software Developer and Tester
+- Employer: AAROHII AI SOLUTION PRIVATE LIMITED, Kanpur
+- Since: February 2026
+- Work: building and testing ViraQueue, Captverse, PixellPeep, and Auvora
+- Stack used on the job and in personal projects: Python, Django, Django REST, JavaScript, Node.js, React Native, PostgreSQL, HTML, CSS, manual testing, unit testing, visual regression, API testing, CI/CD, GitHub Actions, JWT, Git, SQLite
+
+## Products
+
+- ViraQueue: https://viraqueue.com — AI social media management. Drafts are approved before anything publishes.
+- Captverse: https://captverse.com — CRM, inventory, and real-time chat.
+- PixellPeep: https://pixellpeep.com — visual regression testing.
+- Auvora: VMS platform in development. No public URL yet.
+
+## Personal code
+
+- GitHub: https://github.com/Pratyansh-droid
+- EasyBazaar: https://github.com/Pratyansh-droid/EasyBazaar-E-Commerce-
+- Budget Tracker: https://github.com/Pratyansh-droid/Budget_Tracker
+- Voice assistant: https://github.com/Pratyansh-droid/voice-assistant
+- Face mask detection: https://github.com/Pratyansh-droid/facemask-detection-webcam
+
+## Social profiles
+
+- LinkedIn: https://www.linkedin.com/in/pratyansh-singh-896681373/
+- Instagram: https://www.instagram.com/pratyansh_singh_/
+- Threads: https://www.threads.com/@pratyansh_singh_
+- Facebook: https://www.facebook.com/profile.php?id=61563303189946
+- Facebook (second profile): https://www.facebook.com/profile.php?id=61594186592382
+- Email: pratyanshs00@gmail.com
+
+## Do not invent
+
+Do not assign other employers, degrees, dates, or cities to this person. Other people named Pratyansh Singh are not this profile.
