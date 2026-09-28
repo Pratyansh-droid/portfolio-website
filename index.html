@@ -2,74 +2,476 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pratyansh's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pratyansh Singh — Software Developer & QA</title>
+  <meta name="description" content="Pratyansh Singh is a software developer and QA engineer at AAROHII AI SOLUTION. He builds and tests SaaS products including ViraQueue, Captverse, and PixellPeep." />
+  <meta name="author" content="Pratyansh Singh" />
+  <meta name="theme-color" content="#f4f2fb" />
+  <link rel="canonical" href="https://github.com/Pratyansh-droid/portfolio-website" />
+  <meta property="og:title" content="Pratyansh Singh — Software Developer & QA" />
+  <meta property="og:description" content="Build it. Break it. Ship it. Grow it. Software developer and QA at AAROHII AI SOLUTION, Kanpur." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://github.com/Pratyansh-droid.png" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%235b4bff'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial' font-size='28' font-weight='700' fill='white'%3EPS%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script>
+    document.documentElement.classList.add("js");
+    try {
+      var saved = localStorage.getItem("ps-theme");
+      if (saved === "dark" || saved === "light") {
+        document.documentElement.setAttribute("data-theme", saved);
+      }
+    } catch (e) {}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pratyansh Singh",
+    "jobTitle": "Software Developer",
+    "email": "mailto:pratyanshs00@gmail.com",
+    "image": "https://github.com/Pratyansh-droid.png",
+    "url": "https://github.com/Pratyansh-droid",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kanpur",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "IN"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "AAROHII AI SOLUTION PRIVATE LIMITED"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "GLA University"
+    },
+    "sameAs": [
+      "https://github.com/Pratyansh-droid",
+      "https://www.linkedin.com/in/pratyansh-singh-896681373/",
+      "https://www.instagram.com/pratyansh_singh_/",
+      "https://www.threads.com/@pratyansh_singh_",
+      "https://www.facebook.com/profile.php?id=61563303189946",
+      "https://www.facebook.com/profile.php?id=61594186592382"
+    ]
+  }
+  </script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <div class="loader" role="status" aria-live="polite" aria-label="Loading portfolio">
+    <div class="loader-inner">
+      <p class="loader-kicker">pratyansh.singh</p>
+      <p class="loader-word">Build it. Break it. Ship it.</p>
+      <div class="loader-track"><span class="loader-bar"></span></div>
+    </div>
+  </div>
+
+  <div class="nav-shell" id="top">
+  <header class="nav">
+    <a class="logo" href="#top" aria-label="Pratyansh Singh, back to top">Pratyansh<span>.</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-lines" aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
-  <header>
-    <h1>Hello, I'm Pratyansh</h1>
-    <p>Backend Developer | Django Rest FrameWork | Django | MySQL</p>
+    <div class="nav-tools">
+      <button class="theme-btn" type="button" aria-label="Switch to dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M4.8 4.8l1.6 1.6M17.6 17.6l1.6 1.6M19.2 4.8l-1.6 1.6M6.4 17.6l-1.6 1.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5 13.2A6.8 6.8 0 0 1 10.7 4 7.2 7.2 0 1 0 16.5 13.2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+      <a class="nav-cta" href="#contact">Let’s talk</a>
+    </div>
   </header>
+  </div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <section id="resume">
-  <h2>Resume</h2>
-  <a href="PratyanshSingh Resume.pdf" download>
-    <button>Download My Resume</button>
-  </a>
-</section>
-    <p>I love building secure, scalable backend systems and learning new technologies.</p>
-  </section>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">Hello, I am</p>
+        <h1>
+          <span class="line"><span class="line-inner">Pratyansh</span></span>
+          <span class="line"><span class="line-inner">Singh</span></span>
+        </h1>
+        <p class="role"><span></span>Software Developer &amp; QA</p>
+        <p class="lede">
+          I build and test software at AAROHII AI SOLUTION. Python and Django on the backend,
+          quality checks before a release, and live SaaS products that people actually use.
+        </p>
+        <ul class="pills">
+          <li>Python &amp; Django</li>
+          <li>Quality assurance</li>
+          <li>Live SaaS</li>
+          <li>Product builder</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View my work <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="mailto:pratyanshs00@gmail.com">Email me</a>
+        </div>
+        <ul class="socials" aria-label="Social profiles">
+          <li><a href="https://github.com/Pratyansh-droid" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/pratyansh-singh-896681373/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/pratyansh_singh_/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.threads.com/@pratyansh_singh_" target="_blank" rel="noopener noreferrer">Threads</a></li>
+        </ul>
+      </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>BudgetTracker  |  Python • Django • MySQL</li>
-      <li>Jarvish  |  Python • AI/ML Libraries</li>
-      <li>WebCam  |  Python • OpenCV</li>
-      <li>EasyBazaar  |  Python • Django • MySQL • HTML • CSS • JavaScript</li>
-      <li>Bot Reply Text  |  Python • NLP</li>
-    </ul>
-  </section>
+      <aside class="terminal" aria-label="Profile snapshot">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <p>profile.sh</p>
+        </div>
+        <div class="terminal-body" id="terminal"></div>
+      </aside>
+    </section>
 
-  <section id="contact">
-  <h2>Contact Me</h2>
-  <form action="https://formspree.io/f/xzzobgyy" method="POST">
-    <label for="name">Name:</label><br />
-    <input type="text" id="name" name="name" required /><br /><br />
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <p>Python · Django · Django REST Framework · JWT · PostgreSQL · React Native · JavaScript · Node.js · QA · Visual regression · CI/CD · GitHub Actions ·</p>
+        <p>Python · Django · Django REST Framework · JWT · PostgreSQL · React Native · JavaScript · Node.js · QA · Visual regression · CI/CD · GitHub Actions ·</p>
+      </div>
+    </div>
 
-    <label for="email">Email:</label><br />
-    <input type="email" id="email" name="email" required /><br /><br />
+    <section id="about" class="section">
+      <div class="section-head reveal">
+        <p class="index">01</p>
+        <h2>About</h2>
+        <p>Build it. Break it. Ship it. Grow it.</p>
+      </div>
+      <div class="about-grid">
+        <figure class="portrait reveal">
+          <img src="https://github.com/Pratyansh-droid.png" alt="Pratyansh Singh" width="320" height="320" />
+          <figcaption>
+            <strong>Pratyansh Singh</strong>
+            <span>Kanpur Dehat, Uttar Pradesh</span>
+          </figcaption>
+        </figure>
+        <div class="about-copy reveal">
+          <p>
+            I’m a software developer at <strong>AAROHII AI SOLUTION PRIVATE LIMITED</strong>,
+            based in Kanpur. Since February 2026 I’ve worked on products from both sides:
+            writing features, then testing them before they reach users.
+          </p>
+          <p>
+            Most of my development work is Python and Django. Alongside that I do quality
+            assurance, visual regression testing in CI, and the small product decisions that
+            decide whether a feature feels finished.
+          </p>
+          <p>
+            Longer term I want to understand why a product exists, who it is for, and how it
+            grows — then build technology products of my own.
+          </p>
+          <dl class="facts">
+            <div><dt>Company</dt><dd>AAROHII AI SOLUTION</dd></div>
+            <div><dt>Role</dt><dd>Software Developer &amp; QA</dd></div>
+            <div><dt>Since</dt><dd>February 2026</dd></div>
+            <div><dt>Education</dt><dd>GLA University</dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="pillars">
+        <article class="pillar reveal">
+          <p>01</p>
+          <h3>Develop</h3>
+          <p>Backend and web features, mostly Python, Django, and Django REST Framework, plus React Native when the product is mobile.</p>
+        </article>
+        <article class="pillar reveal">
+          <p>02</p>
+          <h3>Test</h3>
+          <p>Find, reproduce, and report bugs. Unit tests, visual regression, and a release check before users see the build.</p>
+        </article>
+        <article class="pillar reveal">
+          <p>03</p>
+          <h3>Ship</h3>
+          <p>Three live products — ViraQueue, Captverse, and PixellPeep — and Auvora, which is still in development.</p>
+        </article>
+        <article class="pillar reveal">
+          <p>04</p>
+          <h3>Grow</h3>
+          <p>UI and UX from a user’s point of view, and an interest in how good software becomes a real business.</p>
+        </article>
+      </div>
+    </section>
 
-    <label for="message">Message:</label><br />
-    <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+    <section id="work" class="section">
+      <div class="section-head reveal">
+        <p class="index">02</p>
+        <h2>Work</h2>
+        <p>Where the code meets the product.</p>
+      </div>
+      <ol class="timeline">
+        <li class="reveal">
+          <div class="when">
+            <p>Feb 2026 — Present</p>
+            <p>Kanpur, India</p>
+          </div>
+          <div class="what">
+            <h3>Software Developer &amp; QA</h3>
+            <p class="org">AAROHII AI SOLUTION PRIVATE LIMITED</p>
+            <ul>
+              <li>Build backend and web features, mainly with Python and Django.</li>
+              <li>Test releases: reproduce bugs, report them clearly, and check the product before it ships.</li>
+              <li>Improve UI and UX from the user’s side, not only from the ticket.</li>
+              <li>Work on automation inside live SaaS products.</li>
+              <li>Contribute to ViraQueue, Captverse, PixellPeep, and Auvora.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="when">
+            <p>Education</p>
+            <p>GLA University</p>
+          </div>
+          <div class="what">
+            <h3>GLA University</h3>
+            <p class="org">Alma mater</p>
+            <p>I studied at GLA University. The personal projects below are where I practiced Django, React Native, and Python before the work at AAROHII.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <p class="index">03</p>
+        <h2>Skills</h2>
+        <p>The tools I use to build, test, and ship.</p>
+      </div>
+      <div class="filters reveal" role="tablist" aria-label="Filter skills">
+        <button type="button" class="is-on" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button type="button" data-filter="dev" role="tab" aria-selected="false">Development</button>
+        <button type="button" data-filter="qa" role="tab" aria-selected="false">Quality</button>
+        <button type="button" data-filter="product" role="tab" aria-selected="false">Product</button>
+      </div>
+      <ul class="skill-cloud" id="skill-cloud">
+        <li data-cat="dev">Python</li>
+        <li data-cat="dev">Django</li>
+        <li data-cat="dev">Django REST Framework</li>
+        <li data-cat="dev">JWT authentication</li>
+        <li data-cat="dev">PostgreSQL</li>
+        <li data-cat="dev">SQLite</li>
+        <li data-cat="dev">JavaScript</li>
+        <li data-cat="dev">Node.js</li>
+        <li data-cat="dev">React Native (Expo)</li>
+        <li data-cat="dev">HTML &amp; CSS</li>
+        <li data-cat="qa">Software testing</li>
+        <li data-cat="qa">Visual regression testing</li>
+        <li data-cat="qa">Unit testing</li>
+        <li data-cat="qa">CI/CD</li>
+        <li data-cat="qa">GitHub Actions</li>
+        <li data-cat="product">UI / UX feedback</li>
+        <li data-cat="product">Automation features</li>
+        <li data-cat="product">SaaS workflows</li>
+        <li data-cat="product">Bug identification</li>
+      </ul>
+    </section>
 
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <p class="index">04</p>
+        <h2>Selected work</h2>
+        <p>Company products I help ship, and personal projects I built to learn.</p>
+      </div>
+      <div class="filters reveal" role="tablist" aria-label="Filter projects">
+        <button type="button" class="is-on" data-project-filter="all" role="tab" aria-selected="true">All</button>
+        <button type="button" data-project-filter="product" role="tab" aria-selected="false">Products</button>
+        <button type="button" data-project-filter="personal" role="tab" aria-selected="false">Personal</button>
+      </div>
+
+      <div class="cards" id="project-grid">
+        <article class="card reveal" data-kind="product">
+          <div class="card-top">
+            <p>01</p>
+            <span class="badge live">Live</span>
+          </div>
+          <h3>ViraQueue</h3>
+          <p>AI-powered social media management. The system drafts posts, and a person approves every one before it publishes.</p>
+          <p class="mine">My work: scheduling and workflow logic, testing, UI/UX improvements, automation features, and bug identification.</p>
+          <ul class="tags"><li>SaaS</li><li>Automation</li><li>QA</li></ul>
+          <a class="card-link" href="https://viraqueue.com" target="_blank" rel="noopener noreferrer">viraqueue.com <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="card reveal" data-kind="product">
+          <div class="card-top">
+            <p>02</p>
+            <span class="badge live">Live</span>
+          </div>
+          <h3>Captverse</h3>
+          <p>An AI operating system for modern businesses: CRM, sales, inventory, payments, and AI agents on one platform.</p>
+          <p class="mine">My work: CRM, inventory, and real-time chat modules.</p>
+          <ul class="tags"><li>CRM</li><li>Inventory</li><li>Realtime chat</li></ul>
+          <a class="card-link" href="https://captverse.com" target="_blank" rel="noopener noreferrer">captverse.com <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="card reveal" data-kind="product">
+          <div class="card-top">
+            <p>03</p>
+            <span class="badge live">Live</span>
+          </div>
+          <h3>PixellPeep</h3>
+          <p>Visual regression testing that catches broken layouts and UI changes before a release goes out.</p>
+          <p class="mine">My work: CI-ready APIs, CLI support, and multi-algorithm diffing.</p>
+          <ul class="tags"><li>Visual regression</li><li>CI</li><li>APIs</li></ul>
+          <a class="card-link" href="https://pixellpeep.com" target="_blank" rel="noopener noreferrer">pixellpeep.com <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="card reveal" data-kind="product">
+          <div class="card-top">
+            <p>04</p>
+            <span class="badge soon">In development</span>
+          </div>
+          <h3>Auvora</h3>
+          <p>A VMS platform currently being built at AAROHII AI SOLUTION. It is not launched yet.</p>
+          <p class="mine">Company product. Source stays private while it is in development.</p>
+          <ul class="tags"><li>VMS</li><li>In progress</li></ul>
+        </article>
+
+        <article class="card reveal" data-kind="personal">
+          <div class="card-top">
+            <p>05</p>
+            <span class="badge code">GitHub</span>
+          </div>
+          <h3>EasyBazaar</h3>
+          <p>E-commerce REST API with Django REST Framework and JWT: products with search and filters, cart, orders, reviews, wishlist, and an admin dashboard.</p>
+          <ul class="tags"><li>Django</li><li>DRF</li><li>JWT</li></ul>
+          <a class="card-link" href="https://github.com/Pratyansh-droid/EasyBazaar-E-Commerce-" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="card reveal" data-kind="personal">
+          <div class="card-top">
+            <p>06</p>
+            <span class="badge code">GitHub</span>
+          </div>
+          <h3>Budget Tracker</h3>
+          <p>Mobile expense tracker built with React Native and Expo: add and edit expenses, spending stats, settings, and profile avatars.</p>
+          <ul class="tags"><li>React Native</li><li>Expo</li></ul>
+          <a class="card-link" href="https://github.com/Pratyansh-droid/Budget_Tracker" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="card reveal" data-kind="personal">
+          <div class="card-top">
+            <p>07</p>
+            <span class="badge code">GitHub</span>
+          </div>
+          <h3>JARVIS</h3>
+          <p>A Python desktop voice assistant with speech recognition and text-to-speech. The project I used to learn how a voice interface actually holds together.</p>
+          <ul class="tags"><li>Python</li><li>Speech</li></ul>
+          <a class="card-link" href="https://github.com/Pratyansh-droid/voice-assistant" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="card reveal" data-kind="personal">
+          <div class="card-top">
+            <p>08</p>
+            <span class="badge code">GitHub</span>
+          </div>
+          <h3>Face mask detection</h3>
+          <p>Real-time face mask detection from a webcam in Python, using an SSD face detector and a mask classifier.</p>
+          <ul class="tags"><li>Python</li><li>OpenCV</li></ul>
+          <a class="card-link" href="https://github.com/Pratyansh-droid/facemask-detection-webcam" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="card reveal" data-kind="personal">
+          <div class="card-top">
+            <p>09</p>
+            <span class="badge code">GitHub</span>
+          </div>
+          <h3>Django API deploy</h3>
+          <p>A Django REST Framework API for managing books, with JWT authentication, CRUD endpoints, unit tests, and a setup aimed at Render.</p>
+          <ul class="tags"><li>Django</li><li>JWT</li><li>Tests</li></ul>
+          <a class="card-link" href="https://github.com/Pratyansh-droid/django-api-deploy" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-head reveal">
+        <p class="index">05</p>
+        <h2>Contact</h2>
+        <p>A product question, a collaboration, or a hello. I read these.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <h3>Reach me directly</h3>
+          <ul class="contact-list">
+            <li>
+              <span>Email</span>
+              <a href="mailto:pratyanshs00@gmail.com">pratyanshs00@gmail.com</a>
+            </li>
+            <li>
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/in/pratyansh-singh-896681373/" target="_blank" rel="noopener noreferrer">pratyansh-singh-896681373</a>
+            </li>
+            <li>
+              <span>Instagram</span>
+              <a href="https://www.instagram.com/pratyansh_singh_/" target="_blank" rel="noopener noreferrer">@pratyansh_singh_</a>
+            </li>
+            <li>
+              <span>Threads</span>
+              <a href="https://www.threads.com/@pratyansh_singh_" target="_blank" rel="noopener noreferrer">@pratyansh_singh_</a>
+            </li>
+            <li>
+              <span>GitHub</span>
+              <a href="https://github.com/Pratyansh-droid" target="_blank" rel="noopener noreferrer">Pratyansh-droid</a>
+            </li>
+            <li>
+              <span>Facebook</span>
+              <a href="https://www.facebook.com/profile.php?id=61563303189946" target="_blank" rel="noopener noreferrer">Profile</a>
+            </li>
+            <li>
+              <span>Facebook</span>
+              <a href="https://www.facebook.com/profile.php?id=61594186592382" target="_blank" rel="noopener noreferrer">Second profile</a>
+            </li>
+            <li>
+              <span>Location</span>
+              <p>Kanpur Dehat, Uttar Pradesh, India</p>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form reveal" action="https://formspree.io/f/xzzobgyy" method="POST">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label>
+            Subject
+            <input type="text" name="subject" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send message <span aria-hidden="true">→</span></button>
+          <p class="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Pratyansh Singh</p>
+    <p>Software Developer &amp; QA at AAROHII AI SOLUTION</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
-</body>
-</html>
-<section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>Django, Django REST Framework</li>
-    <li>SQL, Prisma ORM, Schema Design</li>
-    <li>Postman API Testing</li>
-    <li>Cloud Database Integration</li>
-    <li>Networking Fundamentals (TCP/IP, SSH, POP, IMAP)</li>
-    <li>OOP, Design Patterns, numpy</li>
-  </ul>
-</section>
